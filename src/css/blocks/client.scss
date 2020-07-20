@@ -1,0 +1,72 @@
+/*! ======================================================================================== */
+/*! =========================================CLIENT========================================= */
+/*! ======================================================================================== */
+
+.section--client {
+	margin-top: 75px;
+	padding-top: 50px;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 90%;
+		height: 1px;
+		background-color: #9467B7;
+	}
+}
+
+.client__title {
+	color: #fff;
+	font-family: "open-bold";
+	font-size: rem(32px);
+	padding-top: 20px;
+
+	@include phones {
+		font-size: 14px;
+	}
+}
+
+.client__content {
+	margin-bottom: 50px;
+	@include tablets-hor {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+}
+
+.client__content-form {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+
+	@include tablets-hor {
+		flex-direction: column;
+	}
+
+	@include phones {
+		flex-direction: column;
+		margin-bottom: 20px;
+	}
+}
+
+.client__content-form-input {
+	width: 100%;
+	max-width: 355px;
+}
+
+.client__image {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	@include tablets-hor {
+		display: none;
+	}
+}
+
+

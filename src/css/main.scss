@@ -1,0 +1,28 @@
+//colors
+$yellow: #F6C445;
+$yellow-hover: #F3A84A;
+$text-grey: #8F8F8F;
+$blue-gr: linear-gradient(180deg, #8B6CB6 13.39%, #56358F 88.55%);
+$blue-gr-hover: linear-gradient(180deg, #56358F 13.39%, #8B6CB6 88.55%);
+$red: #EE4266;
+$brown: #6B5210;
+$blue: #5D2F95;
+
+
+//media
+$bp-desktop-hd: "1800px";
+$bp-desktop: "1260px";
+$bp-tablets-hor: "992px";
+$bp-tablets: "768px";
+$bp-phones: "575px";
+$bp-phones-mini: "420px";
+
+//rem function
+@function rem ($px) {
+  @return $px / 18px + 0rem;
+}
+//layout
+@import './mixins.scss';
+@import './layout/*.scss';
+@import './blocks/*.scss';
+@import './libs/hamburgers/hamburgers.scss';

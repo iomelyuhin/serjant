@@ -1,0 +1,174 @@
+/*! ======================================================================================== */
+/*! =========================================FOOTER========================================= */
+/*! ======================================================================================== */
+
+
+.section--footer {
+	background-color: #461D79;
+	padding: 30px 0;
+}
+
+.footer__copy {
+	color: #fff;
+	margin-top: 70px;
+	font-size: rem(20px);
+
+	@include tablets-hor {
+		margin-top: 20px;
+	}
+
+	@include phones {
+		margin-top: 10px;
+		text-align: center;
+	}
+}
+
+.footer__contacts {
+	padding-bottom: 20px;
+
+	@include tablets-hor {
+		display: flex;
+		justify-content: center;
+	}
+
+	@include tablets {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	@include phones {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.footer__brand {
+	@include tablets-hor {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 40px;
+	}
+}
+
+.footer__contacts-item--phone {
+	font-size: rem(28px);
+	color: #fff;
+	font-family: 'open-bold';
+}
+
+.footer__contacts-item--schedule {
+	margin-left: 20px;
+	font-size: 20px;
+	color: #F7D488;
+	text-decoration: underline;
+
+	@include tablets {
+		margin-left: 0;
+		margin-top: 20px;
+	}
+
+	@include phones {
+		display: none;
+	}
+}
+
+.footer__links {
+	padding-top: 26px;
+	border-top: 2px solid #9467B7;
+
+	
+}
+
+.footer__links-contacts {
+	@include desktop {
+		display: flex;
+		margin-bottom: 20px;
+	}
+	@include tablets-hor {
+		justify-content: center;
+	}
+
+	@include phones {
+		flex-direction: column;
+		align-items: center;
+		margin-left: 0;
+	}
+}
+
+.footer__links-contacts-item-link,
+.footer__links-contacts-item {
+	color: #fff;
+	font-size: rem(20px);
+	font-family: 'open-light';
+}
+
+.footer__links-contacts-item-link {
+	span {
+		margin-left: 5px;
+	}
+}
+
+.footer__links-contacts-item.footer__links-contacts-item--email {
+	margin-top: 0;
+}
+
+.footer__links-contacts-item {
+	margin-top: 15px;
+	@include desktop {
+		margin-top: 0;
+		margin-left: 20px;
+	}
+
+	@include phones {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.footer__links-product, .footer__links-info {
+	@include phones {
+		display: none;
+	}
+}
+
+.footer__links-product-item {
+	margin-bottom: 15px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.footer__links-product-link {
+	font-family: 'open-bold';
+	font-size: rem(20px);
+	color: #fff;
+}
+
+.footer__links-contacts-item-link-icon {
+	fill: #fff;
+}
+
+.footer__links-contacts-item-link-icon--mail {
+	width: 25px;
+	height: 16px;
+}
+
+.footer__links-contacts-item-link-icon--time {
+	width: 25px;
+	height: 18px;
+}
+
+.footer__links-info-item {
+	margin-bottom: 15px;
+}
+
+.footer__links-info-link {
+	color: #fff;
+	font-size: rem(20px);
+}

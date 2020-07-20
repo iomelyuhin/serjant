@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Title</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="sections">
+		<div class="section section--header">
+			<div class="header">
+				<div class="header__top _wrapper">
+					<div class="header__nav header__nav--top">
+						<ul class="header__nav-list">
+							<li class="header__nav-item">
+								<a href="#" class="header__nav-link">О нас</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#" class="header__nav-link">Акции</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#" class="header__nav-link">Доставка и оплата</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#" class="header__nav-link">Контакты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header__personal">
+						<div class="header__login">
+							<a href="#" class="header__login-link">Войти</a>
+						</div>
+						<div class="header__cart" data-da="header__main,0,768">
+							<a href="#" class="header__cart-link">
+								<div class="header__cart-link-qty">18</div>
+								<div class="header__cart-link-price">-125 023 Р</div>
+							</a>
+
+						</div>
+					</div>
+				</div>
+				<div class="header__main _wrapper js__headerMenu">
+					<a class="header__logo" href="#">
+						<img src="/img/icons/logo.svg" alt="Сержант принт лого" class="header__logo-pic">
+					</a>
+					<div class="header__search _wrapper" data-da="header,3,992">
+						<div class="header__search-wrap">
+							<button type="button" class="header__search-btn header__search-btn--loop">
+								<svg class="header__search-btn-search-icon">
+									<use xlink:href="/img/sprite.svg#lupa"></use>
+								</svg>
+							</button>
+							<input type="text" class="header__search-input" placeholder="Введите модель картриджа или принтера">
+							<button type="button" class="header__search-btn header__search-btn--find">Найти</button>
+							<ul class="header__search-links">
+								<li class="header__search-links-item">
+									<a href="#" title="Заправить картридж" class="header__search-links-item-link">
+										<svg class="header__search-links-item-link-icon header__search-links-item-link-icon--points">
+											<use xlink:href="/img/sprite.svg#points"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="header__search-links-item">
+									<a href="#" title="Купить картридж" class="header__search-links-item-link">
+										<svg class="header__search-links-item-link-icon header__search-links-item-link-icon--cart">
+											<use xlink:href="/img/sprite.svg#cart"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="header__search-links-item">
+									<a href="#" title="Ремонт принтеров" class="header__search-links-item-link">
+										<svg class="header__search-links-item-link-icon header__search-links-item-link-icon--valve">
+											<use xlink:href="/img/sprite.svg#valve"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="header__contacts">
+						<div class="header__schedule">Ежедневно с 8:00 до 22:00</div>
+						<a href="tel:+74993901712" class="header__phone js__headPhone">+7 (499) 390 17 12</a>
+						<button class="header__callback-btn js__callbackButton">Заказать звонок</button>
+					</div>
+					<div class="header__hamburger header__hamburger--hamburger">
+						<button class="hamburger js_hamburger hamburger--collapse" type="button" aria-label="navigation-menu">
+							<span class="hamburger-box" data-name="menu">
+								<span class="hamburger-inner"></span>
+							</span>
+						</button>
+					</div>
+					<div class="header__mobile-menu"></div>
+					<div class="header__hamburger-menu js_hamburger-menu">
+						<div class="header__hamburger-menu-links">
+							<ul class="header__nav-list">
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link">О нас</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link">Акции</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link">Доставка и оплата</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link">Контакты</a>
+								</li>
+							</ul>
+							<div class="header__personal" data-da="header__hamburger-menu-links,2,768">
+								<div class="header__login">
+									<a href="#" class="header__login-link">Войти</a>
+								</div>
+							</div>
+						</div>
+						<a class="header__logo-burger" href="#">
+							<img src="/img/icons/logo-white.svg" alt="Сержант принт лого" class="header__logo-pic">
+						</a>
+					</div>
+				</div>
+				<div class="header__top _wrapper">
+					<div class="header__nav header__nav--bottom">
+						<ul class="header__nav-list" data-da="header__hamburger-menu-links,1,768">
+							<li class="header__nav-item">
+
+								<a href="#" class="header__nav-link">
+									<svg class="header__nav-link-icon header__nav-link-icon--points">
+										<use xlink:href="/img/sprite.svg#points"></use>
+									</svg>
+									<div class="header__nav-link-text">Заправить картридж</div>
+								</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#" class="header__nav-link">
+									<svg class="header__nav-link-icon header__nav-link-icon--cart">
+										<use xlink:href="/img/sprite.svg#cart"></use>
+									</svg>
+									<div class="header__nav-link-text">Купить картридж</div>
+								</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#" class="header__nav-link">
+									<svg class="header__nav-link-icon header__nav-link-icon--valve">
+										<use xlink:href="/img/sprite.svg#valve"></use>
+									</svg>
+									<div class="header__nav-link-text">Ремонт принтеров</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="section section--repair repair _wrapper">
+			<div class="repair__title">
+				<h1>Ремонт Факсимильных аппаратов <span style="color: red;">от 600 руб.</span></h1>
+			</div>
+			<div class="repair__controls">
+				<ul class="repair__controls-list _fgrid">
+					<li class="repair__controls-item _xl--3 _md--3">
+						<a href="#" class="repair__controls-link active">
+							<div class="repair__controls-title">Принтеры</div>
+							<img class="repair__controls-icon" src="/img/icons/printer.svg" alt="printer">
+						</a>
+					</li>
+					<li class="repair__controls-item _xl--3 _md--3">
+						<a href="#" class="repair__controls-link">
+							<div class="repair__controls-title">МФУ</div>
+							<img class="repair__controls-icon" src="/img/icons/mfu.svg" alt="mfu">
+						</a>
+					</li>
+					<li class="repair__controls-item _xl--3 _md--3">
+						<a href="#" class="repair__controls-link">
+							<div class="repair__controls-title">Копиры</div>
+							<img class="repair__controls-icon" src="/img/icons/copy.svg" alt="copy">
+						</a>
+					</li>
+					<li class="repair__controls-item _xl--3 _md--3">
+						<a href="#" class="repair__controls-link">
+							<div class="repair__controls-title">Факсы</div>
+							<img class="repair__controls-icon" src="/img/icons/fax.svg" alt="fax">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<table class="remont" cellspacing="15" cellpadding="10">
+				<tbody>
+					<tr>
+						<th rowspan="2">Наименование работ</th>
+						<th colspan="2">Цена от … руб. (НДС 18%)</th>
+					</tr>
+					<tr>
+						<th>ТЕРМО</th>
+						<th>ЛАЗЕРНЫЙ</th>
+					</tr>
+					<tr>
+						<td class="table-title" data-tite="Наименование работ">Диагностика</td>
+						<td data-title="ТЕРМО">Бесплатно</td>
+						<td data-title="ЛАЗЕРНЫЙ">Бесплатно</td>
+					</tr>
+					<tr>
+						<td class="table-title" data-tite="Наименование работ">Профилактика</td>
+						<td data-title="ТЕРМО">800</td>
+						<td data-title="ЛАЗЕРНЫЙ">1350</td>
+					</tr>
+					<tr>
+						<td class="table-title" data-tite="Наименование работ">Ремонт автоподатчика</td>
+						<td data-title="ТЕРМО">&nbsp;<span>−</span></td>
+						<td data-title="ЛАЗЕРНЫЙ">1400</td>
+					</tr>
+					<tr>
+						<td class="table-title" data-tite="Наименование работ">Ремонт сортировщика (финишера)</td>
+						<td data-title="ТЕРМО">&nbsp;<span>−</span></td>
+						<td data-title="ЛАЗЕРНЫЙ">1400</td>
+					</tr>
+					<tr>
+						<td class="table-title" data-tite="Наименование работ">Ремонт блока высоковольтного напряжения</td>
+						<td data-title="ТЕРМО">&nbsp;<span>−</span></td>
+						<td data-title="ЛАЗЕРНЫЙ">1400</td>
+					</tr>
+					<tr>
+						<td class="table-title" data-tite="Наименование работ">Ремонт блока лазера</td>
+						<td data-title="ТЕРМО">&nbsp;<span>−</span></td>
+						<td data-title="ЛАЗЕРНЫЙ">1500</td>
+					</tr>
+					<tr>
+						<td class="table-title" data-tite="Наименование работ">Ремонт блока питания</td>
+						<td data-title="ТЕРМО">900</td>
+						<td data-title="ЛАЗЕРНЫЙ">1500</td>
+					</tr>
+					<tr>
+						<td class="table-title" data-tite="Наименование работ">Ремонт блока проявки</td>
+						<td data-title="ТЕРМО">&nbsp;<span>−</span></td>
+						<td data-title="ЛАЗЕРНЫЙ">1500</td>
+					</tr>
+					<tr>
+						<td class="table-title" data-tite="Наименование работ">Ремонт блока фотобарабана</td>
+						<td data-title="ТЕРМО">&nbsp;<span>−</span></td>
+						<td data-title="ЛАЗЕРНЫЙ">1350</td>
+					</tr>
+					<tr>
+						<td class="table-title" data-tite="Наименование работ">Ремонт дуплекса</td>
+						<td data-title="ТЕРМО">&nbsp;<span>−</span></td>
+						<td data-title="ЛАЗЕРНЫЙ">1500</td>
+					</tr>
+					<tr>
+						<td class="table-title" data-tite="Наименование работ">Ремонт панели управления</td>
+						<td data-title="ТЕРМО">750</td>
+						<td data-title="ЛАЗЕРНЫЙ">1350</td>
+					</tr>
+					<tr>
+						<td class="table-title" data-tite="Наименование работ">Ремонт привода (редуктора)</td>
+						<td data-title="ТЕРМО">850</td>
+						<td data-title="ЛАЗЕРНЫЙ">1350</td>
+					</tr>
+					<tr>
+						<td class="table-title" data-tite="Наименование работ">Ремонт сканера</td>
+						<td data-title="ТЕРМО">&nbsp;<span>−</span></td>
+						<td data-title="ЛАЗЕРНЫЙ">1350</td>
+					</tr>
+					<tr>
+						<td class="table-title" data-tite="Наименование работ">Ремонт узла закрепления</td>
+						<td data-title="ТЕРМО">&nbsp;<span>−</span></td>
+						<td data-title="ЛАЗЕРНЫЙ">1350</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section class="section secction--call-master call-master _wrapper">
+			<form action="" method='POST' enctype="multipart/form-data" class="form js__form">
+				<div class="form__thanks"></div>
+				<div class="form__body">
+					<div class="form__fields">
+						<div class='form__fieldset'>
+							<div class="_fgrid">
+								<div class="_xs--12">
+									<div
+										class="form__field form__field--input form__field--focusable <$if $pls[$formid~'.error.fullname']?$>form__field--error<$/if$>">
+										<div class="form__field-inner">
+											<div class="form__field-input">
+												<input class='form__field-element input' name='fullname' value=''>
+												<div class="form__field-placeholder _upper">
+													<div>Имя*</div>
+												</div>
+												<div class='form__field-error'></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="_md--6 _lg--12">
+									<div class="form__field form__field--select form__field--focusable">
+										<div class="form__field-inner">
+											<div class="form__field-input">
+												<input class='form__field-element input' name='fullname' value=''>
+												<div class="form__field-placeholder _upper">
+													<div>E-mail*</div>
+												</div>
+												<div class='form__field-error'></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="_md--6 _lg--12">
+									<div class="form__field form__field--select form__field--focusable">
+										<div class="form__field-inner">
+											<div class="form__field-input">
+												<input class='form__field-element input' name='fullname' value=''>
+												<div class="form__field-placeholder _upper">
+													<div>Адрес доставки*</div>
+												</div>
+												<div class='form__field-error'></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="_md--6 _lg--12">
+									<div class="form__field form__field--select form__field--focusable">
+										<div class="form__field-inner">
+											<div class="form__field-input">
+												<input class='form__field-element input' name='fullname' value=''>
+												<div class="form__field-placeholder _upper">
+													<div>Телефон*</div>
+												</div>
+												<div class='form__field-error'></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="_md--6 _lg--12">
+									<div class="form__field form__field--select form__field--focusable">
+										<div class="form__field-inner">
+											<div class="form__field-label">Тип</div>
+											<div class="form__field-input">
+												<select class='form__field-element' name='region'>
+													<option value="1">Принтеры</option>
+													<option value="2">МФУ</option>
+													<option value="3">Копиры</option>
+													<option value="4">Факс. аппараты</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="_md--6 _lg--12">
+									<div class="form__field form__field--select form__field--focusable">
+										<div class="form__field-inner">
+											<textarea class='form__field-element textarea' name='message' value=''></textarea>
+											<div class="form__field-placeholder _upper">
+												<div>Опишите проблему</div>
+											</div>
+											<div class='form__field-error'>
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="_md--6 _lg--12">
+									<div class="form__field form__field--select form__field--focusable">
+										<div class="form__field-inner">
+											<input type="checkbox" class='form__field-element checkbox' name='durty' value=''>
+											<div class="form__field-placeholder _upper">
+												<div>Грязная печать</div>
+											</div>
+											<div class='form__field-error'>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="_md--6 _lg--12">
+									<div class="form__field form__field--select form__field--focusable">
+										<div class="form__field-inner">
+											<input type="checkbox" class='form__field-element checkbox' name='many-lists' value=''>
+											<div class="form__field-placeholder _upper">
+												<div>Забирает нескольких листов</div>
+											</div>
+											<div class='form__field-error'>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form__footer">
+					<div class="_fgrid">
+						<div class="_xs--12">
+							<div class="form__actions _center">
+								<button class="form__submit button button--main" type='submit' id=''>
+									<span>Вызвать инженера</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</form>
+
+			<div class="call-master__info">
+				<div class="call-master__info-title">
+					<h3>Чем вам понравится работа нашего супермастера</h3>
+				</div>
+				<ul class="call-master__info-list">
+					<li class="call-master__info-item">вам будут предложены любые разновидности результативного ремонта принтеров,
+						включая заправку картриджей, замену печатающих головок, контроллеров, барабанов, перепрошивку управляющих
+						программ;</li>
+					<li class="call-master__info-item">мастер с одинаковым успехом ремонтирует струйные, матричные и лазерные
+						принтеры, а также многофункциональные устройства любых брендов;</li>
+					<li class="call-master__info-item">по необходимости можно дозаправить картридж или установить на струйный
+						принтер систему непрерывной подачи чернил (СНПЧ), позволяющую навсегда забыть о проблемах с заправкой;</li>
+					<li class="call-master__info-item">вам будут предоставлены гарантии на безотказную работу отремонтированного
+						оборудования в течение определённого времени;</li>
+					<li class="call-master__info-item">предлагаемая цена ремонта принтеров на 10-15% ниже столичных расценок, а
+						качество – на самом высоком уровне!</li>
+				</ul>
+
+				<div class="call-master__desc">Технический грамотный ремонт принтеров в Москве от СержантПринта – доверяйте
+					ответственную работу умелому и знающему профессионалу!</div>
+			</div>
+		</section>
+
+
+
+		<div class="section section--benefits benefits _wrapper">
+			<ul class="benefits__list">
+				<li class="benefits__item">
+					<div class="benefits__item-icon">
+						<img src="img/icons/car.svg" alt="" class="benefits__item-icon-pic">
+					</div>
+					<div class="benefits__item-text">
+						<span>Выезд</span>
+						<div class="benefits__item-text-title">Бесплатно</div>
+					</div>
+				</li>
+				<li class="benefits__item">
+					<div class="benefits__item-icon">
+						<img src="img/icons/castle.svg" alt="" class="benefits__item-icon-pic">
+					</div>
+					<div class="benefits__item-text">
+						<span>Квалифицированный</span>
+						<div class="benefits__item-text-title">ИНЖЕНЕР</div>
+					</div>
+				</li>
+				<li class="benefits__item">
+					<div class="benefits__item-icon">
+						<img src="img/icons/lupa.svg" alt="" class="benefits__item-icon-pic">
+					</div>
+					<div class="benefits__item-text">
+						<span>Диагностика</span>
+						<div class="benefits__item-text-title">БЕСПЛАТНО</div>
+					</div>
+				</li>
+				<li class="benefits__item">
+					<div class="benefits__item-icon">
+						<img src="img/icons/ok.svg" alt="" class="benefits__item-icon-pic">
+					</div>
+					<div class="benefits__item-text">
+						<span>на все виды работ</span>
+						<div class="benefits__item-text-title">ВЫДАЕМ ГАРАНТИИ</div>
+					</div>
+				</li>
+				<li class="benefits__item">
+				</li>
+			</ul>
+			<button class="benefits__item-button js__callEngeneerButton" type="button">Вызвать <br />инженера</button>
+
+		</div>
+		<div class="section section--client client _wrapper _fgrid">
+			<div class="client__content _xl--7 _lg--7">
+				<div class="client__title">
+					<h2>Станьте нашим постоянным клиентом и получайте скидки на новые заказы</h2>
+				</div>
+				<form action="" method='POST' enctype="multipart/form-data" class="client__content-form form js__clientForm">
+					<div class="form__thanks"></div>
+					<div class="form__body">
+						<div class="form__fields">
+							<div class='form__fieldset'>
+								<div class="_fgrid">
+									<div class="_xs--12">
+										<div class="form__field form__field--input form__field--focusable ">
+											<div class="form__field-inner">
+												<div class="form__field-input">
+													<input class='form__field-element client__content-form-input input' name='email' value=''
+														placeholder="Ваш email">
+													<!--form__field-placeholder тут не понадобится. это для плавающего плейсхолдера-->
+													<div class='form__field-error'></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form__footer">
+						<div class="_fgrid">
+							<div class="_xs--12">
+								<div class="form__actions _center">
+									<button class="form__submit button button--main" type='submit' id='<$$formid$>__submit'>
+										<span>Подписаться</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="client__image  _xl--5 _lg--5">
+				<img src="/img/content/pic/responder_form.png" alt="" class="client__image-img">
+			</div>
+		</div>
+		<div class="section section--footer">
+			<div class="footer _wrapper _fgrid">
+				<div class="footer__brand _xl--4 _lg--4">
+					<div class="footer__logo">
+						<img src="/img/icons/logo_footer.svg" alt="Логотип СержантПринт" class="footer__logo-img">
+					</div>
+					<div class="footer__copy" data-da="footer__links,1,575">© СержантПринт 2020</div>
+				</div>
+				<div class="footer__content _xl--8 _lg--8">
+					<div class="footer__contacts">
+						<a href="tel:+74993901712" class="footer__contacts-item footer__contacts-item--phone">+7 (499) 390 17-12</a>
+						<a href="#" class="footer__contacts-item footer__contacts-item--schedule">Ежедневно с 8:00 до 22:00</a>
+					</div>
+					<div class="footer__links _fgrid">
+						<div class="footer__links-contacts _xl--4 _lg--12 _md--12">
+							<div class="footer__links-contacts-item footer__links-contacts-item--email">
+								<a href="mailto:zakaz@serjantprint.ru" class="footer__links-contacts-item-link">
+									<svg class="footer__links-contacts-item-link-icon footer__links-contacts-item-link-icon--mail">
+										<use xlink:href="/img/sprite.svg#mail"></use>
+									</svg>
+									<span>zakaz@serjantprint.ru</span>
+								</a>
+							</div>
+							<div class="footer__links-contacts-item footer__links-contacts-item--schedule">
+								<svg class="footer__links-contacts-item-link-icon footer__links-contacts-item-link-icon--time">
+									<use xlink:href="/img/sprite.svg#time"></use>
+								</svg>
+								<span>Пн-Вс 8:00 – 22:00</span>
+							</div>
+						</div>
+						<ul class="footer__links-product _xl--4 _lg--6 _md--6 _xs--6">
+							<li class="footer__links-product-item">
+								<a href="#" class="footer__links-product-link">Заправить картридж</a>
+							</li>
+							<li class="footer__links-product-item">
+								<a href="#" class="footer__links-product-link">Купить картридж</a>
+							</li>
+							<li class="footer__links-product-item">
+								<a href="#" class="footer__links-product-link">Ремонт принтеров</a>
+							</li>
+						</ul>
+						<ul class="footer__links-info _xl--4 _lg--6 _md--6 _xs--6">
+							<li class="footer__links-info-item">
+								<a href="#" class="footer__links-info-link">О нас</a>
+							</li>
+							<li class="footer__links-info-item">
+								<a href="#" class="footer__links-info-link">Акции</a>
+							</li>
+							<li class="footer__links-info-item">
+								<a href="#" class="footer__links-info-link">Доставка и оплата</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup js__popup">
+		<div class="popup__container">
+			<button class="popup__close js__closePopup" type="button">
+				<svg class="popup__close-icon">
+					<use xlink:href="/img/sprite.svg#wclose"></use>
+				</svg>
+			</button>
+			<div class="popup__title">Перезвоните мне</div>
+			<div>Здесь вставить форму</div>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+	<!-- <script src="js/slider.js"></script> -->
+	<script src="js/libs/dynad.js"></script>
+</body>
+
+</html>

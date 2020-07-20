@@ -1,0 +1,14 @@
+<svg width="23" height="23" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>icon user</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-4377 755)">
+<g id="icon user">
+<g id="Subtract">
+<use xlink:href="#path0_fill" transform="translate(4377 -755)" fill="#F6C445"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 23 11.5C 23 17.8513 17.8511 23 11.5 23C 5.14893 23 0 17.8513 0 11.5C 0 5.14874 5.14893 0 11.5 0C 17.8511 0 23 5.14874 23 11.5ZM 15 8.5C 15 10.433 13.4331 12 11.5 12C 9.56689 12 8 10.433 8 8.5C 8 6.56702 9.56689 5 11.5 5C 13.4331 5 15 6.56702 15 8.5ZM 11.5 13C 8.54736 13 6.05469 14.9689 5.2627 17.6655C 6.93164 19.1194 9.11279 20 11.5 20C 13.8872 20 16.0684 19.1194 17.7373 17.6655C 16.9453 14.9689 14.4526 13 11.5 13Z"/>
+</defs>
+</svg>

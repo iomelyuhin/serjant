@@ -1,0 +1,127 @@
+/*! ======================================================================================== */
+/*! =========================================BENEFITS======================================= */
+/*! ======================================================================================== */
+
+.section--benefits {
+	margin-top: 65px;
+	display: flex;
+
+	@include desktop {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.benefits__list {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	@include desktop {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+.benefits__item {
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
+	width: fit-content;
+	position: relative;
+	
+	&::after {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		right: -40px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 16px;
+		height: 30px;
+		background: url("/img/icons/lightning.svg") no-repeat;
+		background-size: contain;
+		@include desktop {
+			display: none;
+		}
+	}
+
+	@include desktop {
+		width: 25%;
+		justify-content: center;
+	}
+
+	@include tablets-hor {
+		flex-direction: column;
+		text-align: center;
+		justify-content: flex-start;
+	}
+
+	@include tablets {
+		width: 40%;
+		margin-top: 20px;
+	}
+
+	@include phones {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	&:last-child{
+		@include desktop {
+			margin-top: 20px;
+		}
+		@include phones {
+			margin-bottom: 0;
+		}
+		&::after {
+			display: none;
+		}
+	}
+}
+
+.benefits__item-text {
+	margin-left: 13px;
+	span {
+		font-family: 'open-semibold';
+		font-size: 15px;
+		color: #fff;
+
+	}
+
+	@include phones {
+		margin-left: 0;
+	}
+}
+
+.benefits__item-icon {
+	max-height: 45px;
+}
+
+.benefits__item-text-title {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: 'open-semibold';
+	@include tablets-hor {
+		margin-top: 5px;
+	}
+}
+
+.benefits__item-button {
+	color: #000;
+	background: linear-gradient(180deg, #F6C445 20%, #F3A84A 80%);
+	border-radius: 10px;
+	display: flex;
+	// height: 70px;
+	justify-content: center;
+	align-items: center;
+	font-family: 'open-semibold';
+	font-size: 20px;
+	padding: 12px 43px;
+	max-width: fit-content;
+
+	&:hover {
+		background: linear-gradient(180deg,#F3A84A 20%, #F6C445 80%);
+	}
+}
