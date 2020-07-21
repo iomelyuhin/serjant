@@ -1,0 +1,38 @@
+.call-master {
+	background-color: #fff;
+
+	.form__body {
+		width: 100%;
+	}
+
+	.form__field-input {
+		display: flex;
+	}
+}
+
+.call-master__info-title {
+	margin-bottom: 30px;
+	h3 {
+		margin-top: 0px;
+    padding-top: 15px;
+    font-family: 'open-bold';
+    font-size: 24px;
+    line-height: 1.3;
+	}
+}
+
+.call-master__info-list {
+	.call-master__info-item {
+
+		list-style: disc;
+		margin-bottom: 5px;
+	}
+}
+
+.call-master__info {
+	padding-left: 30px;
+}
+
+.call-master__desc {
+	margin-top: 20px;
+}

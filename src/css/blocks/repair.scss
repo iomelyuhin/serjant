@@ -10,7 +10,11 @@
 .repair__title h1 {
   font-size: 40px;
   font-family: "open-bold";
-  font-weight: bold;
+	font-weight: bold;
+	
+	@include phones {
+		font-size: 28px;
+	}
 }
 
 .repair__controls-link {
@@ -75,7 +79,11 @@
     .repair__controls-icon {
       width: 47px;
     }
-  }
+	}
+	
+	@include desktop {
+		margin-bottom: 10px;
+	}
 }
 
 .repair__controls-title {
@@ -98,6 +106,19 @@
       text-align: center;
       line-height: 2;
 			vertical-align: middle;
+
+			@include phones {
+				display: none;
+			}
+		}
+
+		tr:not(.remont__head) {
+			@include phones {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				border-top: 2px solid $blue;
+			}
 		}
 		
 		td {
@@ -106,6 +127,23 @@
 			text-align: center;
 			&.table-title {
 				text-align: left;
+				@include phones {
+					text-align: center;
+				}
+			}
+
+			&::before {
+				@include phones {
+					content: attr(data-title);
+					display: flex;
+					font-weight: bold;
+				}
+			}
+
+			@include phones {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
 			}
 		}
   }
