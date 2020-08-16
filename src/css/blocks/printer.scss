@@ -1,0 +1,231 @@
+/*! ======================================================================================== */
+/*! =========================================PRINTER========================================= */
+/*! ======================================================================================== */
+
+.printer {
+  background-color: #fff;
+	padding: 40px;
+	
+	@include phones {
+		padding: 10px;
+	}
+}
+
+.printer__title {
+  font-family: "open-bold";
+  font-size: 20px;
+}
+
+.printer__content {
+  display: flex;
+  margin-top: 40px;
+	flex-wrap: nowrap;
+
+	@include tablets-hor {
+		flex-direction: column;
+	}
+}
+
+.printer__others {
+  min-width: 160px;
+	position: sticky;
+	position: -webkit-sticky;
+	align-self: flex-start;
+	top: 90px;
+	left: 0;
+	display: block;
+
+	@include tablets-hor {
+		position: initial;
+	}
+}
+
+.printer__others-list {
+	@include tablets-hor {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+	}
+}
+
+.printer__others-link {
+	display: flex;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #edbe3c;
+  }
+
+  &.active {
+    background-color: #edbe3c;
+  }
+}
+
+//table
+
+.priter__table {
+	width: 100%;
+}
+
+.priter__table-tr {
+  height: 50px;
+  th {
+		position: sticky;
+    top: 70px;
+    padding: 10px;
+    border-right: 2px solid #fff;
+    background-color: #edbe3c;
+	}
+	
+	@include tablets {
+		display: none;
+	}
+}
+.printer__table-item {
+	border-bottom: 2px solid #e5e5e5;
+	padding: 20px 0;
+	
+	@include tablets {
+		border-bottom: none;
+		border-top: 2px solid #e5e5e5;
+		display: flex;
+    flex-direction: column;
+    width: 100%;
+	}
+}
+
+.printer__table-printers-item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  ul {
+    display: flex;
+		flex-wrap: wrap;
+
+		@include tablets {
+			justify-content: center;
+		}
+  }
+
+  li {
+    display: flex;
+
+		&:last-child::after {
+			display: none;
+		}
+
+    &::after {
+      content: "/";
+      display: flex;
+      padding: 0 5px;
+    }
+  }
+
+  a {
+    border-bottom: 1px solid $red;
+    color: $red;
+    transition: 0.3s;
+
+    &:hover {
+      border-bottom: 1px solid transparent;
+    }
+	}
+	
+	@include tablets {
+		text-align: center;
+		justify-content: center;
+
+	}
+}
+
+.printer__table-name {
+  white-space: nowrap;
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+//----------------
+.printer__table-cartr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	align-items: center;
+	
+	@include tablets {
+		flex-direction: initial;
+	}
+}
+
+.printer__table-cartr-item-link {
+  display: flex;
+  align-items: center;
+}
+
+.printer__table-cartr-item-name {
+  border-bottom: 1px solid $red;
+  color: $red;
+  transition: 0.3s;
+
+  &:hover {
+    border-bottom: 1px solid transparent;
+  }	
+}
+
+.printer__table-cartr-item {
+	padding: 10px 0;
+	
+	@include tablets {
+		margin-right: 10px;
+	}
+}
+
+.printer__cartr-item,
+.printer__model-item {
+	&::before {
+		display: none;
+		content: attr(data-name);
+		text-align: center;
+		font-size: 22px;
+		font-weight: 900;
+
+		@include tablets {
+			margin-top: 20px;
+			display: block;
+
+		}
+	}
+}
+
+.printer__price-item {
+	@include tablets {
+		display: none;
+	}
+}
+
+.printer__table-cartr-item-color {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+.printer__taple-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.printer__table-price-item {
+  padding: 10px 0;
+}
+
+
+
+
+
+

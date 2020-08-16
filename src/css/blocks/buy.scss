@@ -1,0 +1,38 @@
+/*! ======================================================================================== */
+/*! =========================================BUY========================================= */
+/*! ======================================================================================== */
+
+.buy {
+	background-color: #fff;
+	padding: 40px;
+}
+
+.buy__title {
+	font-family: 'open-bold';
+	font-size: 20px;
+}
+
+.buy__brands {
+	margin-top: 20px;
+}
+
+.seoblock--inner {
+	background-color: #fff;
+	
+	& .seoblock__content p, 
+	.seoblock__content ol, li, 
+	.seoblock__content h2 {
+		color: #000;
+		
+	}
+}
+
+.buy__calc {
+	margin-top: 40px;
+
+
+}
+
+
+
+

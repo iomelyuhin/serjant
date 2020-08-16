@@ -1,0 +1,35 @@
+/*! ======================================================================================== */
+/*! =========================================REFILL========================================= */
+/*! ======================================================================================== */
+.refill {
+	background-color: #fff;
+	padding: 40px;
+	@include phones {
+		padding: 10px;
+	}
+	
+}
+
+.refill__title {
+	font-family: 'open-bold';
+	font-size: 20px;
+}
+
+.refill__brands {
+	margin-top: 20px;
+}
+
+.seoblock--inner {
+	background-color: #fff;
+	
+	& .seoblock__content p, ol, li {
+		color: #000;
+		
+	}
+}
+
+.refil__calc {
+	margin-top: 40px;
+
+
+}
