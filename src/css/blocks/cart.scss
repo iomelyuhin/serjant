@@ -1,0 +1,64 @@
+/*! ======================================================================================== */
+/*! =========================================CART========================================= */
+/*! ======================================================================================== */
+.cart {
+	background-color: #fff;
+	padding: 40px;
+
+	@include phones {
+		padding: 10px;
+	}
+}
+.cart__title {
+	font-family: "open-bold";
+	// margin-bottom: 10px;
+	font-size: 20px;
+}
+
+
+//qty
+.cart__goods-price-qty {
+	display: flex;
+	border: 1px solid #5ECAA0;
+	border-radius: 10px;
+	height: 54px;
+
+	@include tablets-hor {
+		margin: 10px 0;
+	}
+}
+
+.cart__goods-price-qty-btn,
+.cart__goods-price-qty-val {
+	height: 52px;
+	width: 52px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.cart__goods-price-qty-btn--down {
+	border-radius: 10px 0 0 10px;
+}
+
+.cart__goods-price-qty-btn--up {
+	border-radius: 0 10px 10px 0;
+}
+
+.cart__goods-price-qty-btn {
+	background-color: #EBEBEB;
+	transition: 0.3s;
+
+	&:hover {
+		background-color: #d4d4d4;
+	}
+}
+
+.cart__goods-price-qty-val-input {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	border: none;
+}
