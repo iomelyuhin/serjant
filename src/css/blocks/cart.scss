@@ -7,7 +7,28 @@
 
   @include phones {
     padding: 10px;
-  }
+	}
+	
+
+	//cart-form settings
+
+	.form__body {
+		margin-top: 40px;
+		width: 100%;
+	}
+
+	.form__field--textarea {
+		margin-top: 20px;
+	}
+
+	.form__actions {
+		display: flex;
+		align-items: center;
+	}
+
+	.form__footer {
+		margin-top: 20px;
+	}
 }
 .cart__title {
   font-family: "open-bold";
@@ -19,8 +40,10 @@
 .cart__goods-price-qty {
   display: flex;
   border: 1px solid #5ecaa0;
-  border-radius: 10px;
-  height: 54px;
+	border-radius: 10px;
+	max-width: 158px;
+	height: 54px;
+	margin: 0 auto;
 
   @include tablets-hor {
     margin: 10px 0;
@@ -68,14 +91,15 @@
 
 .cart__goods-table {
   border-collapse: separate;
-	border-spacing: 15px;
+  border-spacing: 15px;
+  width: 100%;
 }
 
 .cart__goods-table-item {
-	td {
-		padding-bottom: 10px;
-		border-bottom: 1px solid #EBEBEB;
-	}
+  td {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+  }
 }
 
 .cart__goods-table-thead {
@@ -119,17 +143,17 @@
 }
 
 .cart__goods-table-total {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .cart__goods-table-total-price {
   color: #5ecaa0;
-	font-size: 22px;
-	font-family: 'open-bold';
-	white-space: nowrap;
+  font-size: 22px;
+  font-family: "open-bold";
+  white-space: nowrap;
 }
 
 .cart__goods-table-total-remove {
@@ -141,24 +165,139 @@
   cursor: pointer;
 }
 
-
 .cart__goods-total {
-	display: flex;
-	width: 100%;
-	justify-content: flex-end;
-	align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .cart__goods-total-text {
-	padding: 10px 0;
-	margin-right: 20px;
-
+  padding: 10px 0;
+  margin-right: 20px;
 }
 
 .cart__goods-total-price {
-	text-align: center;
-	padding: 10px 0;
-	color: #5ECAA0;
-	font-family: 'open-bold';
-	font-size: 24px;
+  text-align: center;
+  padding: 10px 0;
+  color: #5ecaa0;
+  font-family: "open-bold";
+  font-size: 24px;
+}
+
+.cart__form {
+  margin-top: 40px;
+}
+
+.cart__form-status {
+  display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.cart__form-status-btn {
+	border: 1px solid #ebebeb;
+	font-size: 14px;
+	height: 28px;
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+
+  &:first-child {
+		border-radius: 14px 0 0 14px;
+		// margin-right: 10px;
+  }
+  &:last-child {
+		border-radius: 0 14px 14px 0;
+	}
+	
+	&.active {
+		background-color: #ebebeb;
+
+	}
+}
+
+.radio__label {
+	display: flex;
+	align-items: flex-start;
+	padding: 10px 15px;
+}
+
+.radio__text {
+	max-width: 630px;
+}
+
+.radio__text-title {
+	margin-left: 20px;
+	color: #000000;
+	font-size: 18px;
+	line-height: 1.5;
+	font-family: 'open-semibold';
+}
+
+.radio__text-desc {
+	margin-left: 20px;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.radio__length,
+.radio__price {
+	align-self: flex-end;
+}
+
+.radio__length {
+	margin-right: 20px;
+}
+
+.form__actions-attention {
+	margin-right: 20px;
+}
+
+.form__actions-attention-text {
+	margin-bottom: 5px;
+}
+
+.form__actions-attention-link {
+	color: $red;
+	border-bottom: 1px solid $red;
+	transition: 0.3s;
+
+	&:hover {
+		border-bottom: 1px solid transparent;
+	} 
+}
+
+.radio__input {
+
+	.form__field-element {
+		appearance: none;
+		opacity: 0;
+	}
+}
+
+.radio__fake {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #cfcfcf;
+	border-radius: 30px;
+	cursor: pointer;
+
+	&::after {
+		content: "";
+		display: flex;
+		width: 10px;
+    height: 10px;
+    background: #5D2F95;
+		border-radius: 10px;
+		opacity: 0;
+		transition: 0.3s;
+	}
+}
+
+.radio__input .form__field-element:checked+.radio__fake::after {
+	opacity: 1;
 }
