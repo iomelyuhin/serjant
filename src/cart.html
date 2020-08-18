@@ -196,15 +196,17 @@
 			</div>
 			<div class="cart__content">
 				<div class="cart__goods">
-					<table class="cart__goods-table">
-						<tr>
-							<th>Изображение</th>
-							<th>Товар, информация</th>
-							<th>Стоимость</th>
-							<th>Количество</th>
-							<th>Сумма</th>
-						</tr>
-						<tr>
+					<table class="cart__goods-table" cellspacing="15">
+						<thead class="cart__goods-table-thead">
+							<tr>
+								<th>Изображение</th>
+								<th>Товар, информация</th>
+								<th>Стоимость</th>
+								<th>Количество</th>
+								<th>Сумма</th>
+							</tr>
+						</thead>
+						<tr class="cart__goods-table-item">
 							<td data-name="Изображение">
 								<img src="/img/content/pic/cart-img.jpg" alt="img" class="cart__goods-table-image">
 							</td>
@@ -215,7 +217,7 @@
 									<div class="cart__goods-table-info-type">Покупка оригинального картриджа</div>
 								</div>
 							</td>
-							<td data-name="Стоимость">2 250 ₽</td>
+							<td data-name="Стоимость" class="cart__goods-price">2 250 ₽</td>
 							<td data-name="Количество">
 								<div class="cart__goods-price-qty">
 									<div class="cart__goods-price-qty-btn cart__goods-price-qty-btn--down">-</div>
