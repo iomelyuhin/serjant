@@ -16,6 +16,38 @@
   font-size: 20px;
 }
 
+.model__title--with-btn {
+	display: flex;
+	justify-content: space-between;
+
+	@include tablets-hor {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+.model__title-btn {
+	// width: 100%;
+	border: 2px solid #5D2F95;
+	border-radius: 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 10px 10px;
+	white-space: nowrap;
+	color: #5D2F95;
+	transition: 0.3s;
+	font-family: "open-semibold";
+	&:hover {
+		background-color: #5D2F95;
+		color: #fff;
+	}
+
+	@include tablets-hor {
+		margin-top: 20px;
+	}
+}
+
 .model__content {
   margin-top: 40px;
   display: flex;
@@ -55,7 +87,7 @@
   display: flex;
 	margin-bottom: 40px;
 	
-	@include phones {
+	@include tablets {
 		flex-direction: column;
 	}
 }
@@ -66,7 +98,7 @@
   font-size: 18px;
 	flex-shrink: 0;
 
-	@include phones {
+	@include tablets {
 		width: 100%;
 		margin-bottom: 10px;
 	}
@@ -243,16 +275,29 @@
 	min-height: 150px;
 	border-radius: 10px;
 	margin-top: 20px;
+
+	@include tablets {
+		flex-direction: column;
+		padding: 20px 0;
+	}
 }
 
 .model__additional-item-image {
 	width: 20%;
 	margin-left: 20px;
+
+	@include tablets {
+		width: 50%;
+	}
 }
 
 .model__additional-item-content {
 	width: 50%;
 	margin-left: 20px;
+	@include tablets {
+		margin-top: 10px;
+		width: 100%;
+	}
 }
 
 .model__additional-item-title {
@@ -278,10 +323,23 @@
 	span {
 		font-weight: bold;
 	}
+
+	@include tablets-hor {
+		flex-direction: column;
+	}
+	@include tablets {
+		flex-direction: row;
+	}
 }
 
 .model__additional-item-text-inner {
 	margin-right: 20px;
+	@include tablets-hor {
+		margin-top: 10px;
+	}
+	@include tablets {
+		margin-top: 0px;
+	}
 }
 
 
@@ -289,6 +347,10 @@
 .model__additional-item-btn {
 	width: 30%;
 	padding: 0 20px;
+
+	@include tablets-hor {
+		width: initial;
+	}
 }
 
 .model__additional-item-button {
@@ -311,7 +373,7 @@
 		background: url("/img/icons/shesternya.svg");
 		background-repeat: no-repeat;
 		// background-size: 30px 30px;
-		width: 30px;
+		width: 29px;
 		height: 30px;
 		margin-right: 10px;
 		font-size: 20px;
@@ -324,5 +386,11 @@
 		&::before {
 			background: url("/img/icons/shesternya_w.svg");
 		}
+	}
+	@include tablets-hor {
+		width: initial;
+	}
+	@include tablets {
+		margin-top: 20px;
 	}
 }
