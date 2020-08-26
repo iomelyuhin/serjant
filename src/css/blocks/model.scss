@@ -330,6 +330,9 @@
 	@include tablets {
 		flex-direction: row;
 	}
+	@include phones {
+		flex-direction: column;
+	}
 }
 
 .model__additional-item-text-inner {
@@ -339,6 +342,9 @@
 	}
 	@include tablets {
 		margin-top: 0px;
+	}
+	@include phones {
+		margin-top: 10px;
 	}
 }
 
@@ -392,5 +398,153 @@
 	}
 	@include tablets {
 		margin-top: 20px;
+	}
+}
+
+.model__refill {
+	border-top: 2px dashed #888;
+	padding-top: 10px;
+	display: flex;
+
+	@include desktop {
+		flex-direction: column;
+	}
+
+	@include phones {
+		align-items: center;
+	}
+}
+
+.model__refill-title {
+	font-size: 30px;
+	font-family: 'open-extra';
+	width: 50%;
+	flex-shrink: 0;
+
+	@include desktop {
+		width: 100%;
+	}
+	
+	@include phones {
+		text-align: center;
+	}
+}
+
+.model__refill-price {
+	width: 50%;
+	flex-shrink: 0;
+	max-width: fit-content;
+	margin-top: 25px;
+
+	@include desktop {
+		width: 100%;
+	}
+}
+
+.model__refill-calc {
+	display: flex;
+	flex-direction: column;
+}
+
+.model__refill-calc-text {
+	font-size: 18px;
+	font-family: "open-semibold";
+}
+
+.model__refill-calc-controls {
+	display: flex;
+	margin-top: 10px;
+}
+
+.model__refill-calc-btn {
+	background-color: $yellow;
+	padding: 10px 30px;
+	margin-right: 2px;
+	white-space: nowrap;
+	font-size: 14px;
+	font-family: "open-semibold";
+	// cursor: pointer;
+
+	&:first-child {
+		border-radius: 20px 0 0 20px;
+	}
+
+	&:last-child {
+		border-radius: 0 20px 20px 0;
+		margin-right: 0;
+	}
+
+	&.active {
+		background: #593890;
+    color: #FFFFFF;
+	}
+	
+	&:hover {
+    background: #8B6CB6;
+    color: #FFFFFF;
+	}
+	
+	@include phones {
+		padding: 10px 15px;
+	}
+}
+
+.model__refill-calc-bottom {
+	border-top: 2px solid #EBEBEB;
+	margin-top: 10px;
+	font-size: 12px;
+	display: flex;
+}
+
+.model__refill-calc-bottom-link {
+	width: 50%;
+	color: #0000EE;
+	text-decoration: underline;
+	display: flex;
+	font-family: "open-semibold";
+	padding: 5px 0;
+	
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.model__refill-calc-bottom-text {
+	padding: 5px 0;
+	font-family: "open-semibold";
+	color: #8F8F8F;
+}
+
+.model__refill-total-wrap {
+	display: flex;
+	align-items: center;
+
+	@include phones {
+		justify-content: center;
+	}
+}
+
+.model__refill-total {
+	display: flex;
+	align-items: flex-end;
+
+	@include phones {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.model__price-money {
+		margin-right: 20px;
+	}
+	
+	.model__price-action {
+		
+		@include phones {
+			display: flex;
+			align-items: center;
+			flex-direction: row;
+			justify-content: center;
+			// margin-left: 10px;
+		}
 	}
 }
