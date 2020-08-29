@@ -37,12 +37,15 @@ document.addEventListener(`DOMContentLoaded`, function () {
     body.style.overflow = "initial";
     body.style.paddingRight = "initial";
   }
-
-	clickOnPopupBtn(callbackBtn);
-	if (heroBtn) {
-		clickOnPopupBtn(heroBtn);
-	}
-  clickOnPopupBtn(callEngeneerBtn);
+  if (callbackBtn) {
+    clickOnPopupBtn(callbackBtn);
+  }
+  if (heroBtn) {
+    clickOnPopupBtn(heroBtn);
+  }
+  if (callEngeneerBtn) {
+    clickOnPopupBtn(callEngeneerBtn);
+  }
   closePopupBtn.addEventListener("click", (e) => {
     e.preventDefault();
     closePopup();
@@ -56,38 +59,75 @@ document.addEventListener(`DOMContentLoaded`, function () {
 
   //!=====================================================================
   //!========================STICK MENU===================================
-	//!=====================================================================
-	const headMenu = document.querySelector(".js__headerMenu")
-	const headPhone = document.querySelector(".js__headPhone")
+  //!=====================================================================
+  const headMenu = document.querySelector(".js__headerMenu");
+  const headPhone = document.querySelector(".js__headPhone");
 
-	document.addEventListener("scroll", e => {
-		// e.preventDefault();
-		if (pageYOffset>=234) {
-			headMenu.classList.add("stick")
-			headPhone.style.fontSize = "24px"
-			callbackBtn.style.fontSize = "14px"
-		} else {
-			headMenu.classList.remove("stick")
-			headPhone.style.fontSize = "28px"
-			callbackBtn.style.fontSize = "20px"
-
-		}
-		
-	})
-	//!=====================================================================
+  document.addEventListener("scroll", (e) => {
+    // e.preventDefault();
+    if (pageYOffset >= 234) {
+      headMenu.classList.add("stick");
+      headPhone.style.fontSize = "24px";
+      callbackBtn.style.fontSize = "14px";
+    } else {
+      headMenu.classList.remove("stick");
+      headPhone.style.fontSize = "28px";
+      callbackBtn.style.fontSize = "20px";
+    }
+  });
+  //!=====================================================================
   //!========================BURGER MENU===================================
-	//!=====================================================================
-	const burgerBtn = document.querySelector(".js_hamburger");
-	const burgerMenu = document.querySelector(".js_hamburger-menu");
+  //!=====================================================================
+  const burgerBtn = document.querySelector(".js_hamburger");
+  const burgerMenu = document.querySelector(".js_hamburger-menu");
+
+  burgerBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    burgerBtn.classList.toggle("is-active");
+    burgerMenu.classList.toggle("active");
+    if (burgerBtn.classList.contains("is-active")) {
+      body.style.overflow = "hidden";
+    } else {
+      body.style.overflow = "initial";
+    }
+  });
+  //!=====================================================================
+  //!========================PRICES IN MENU===================================
+  //!=====================================================================
+  const priceButton = document.querySelector(".js__pricesButton");
+  const priceList = document.querySelector(".js__pricesList");
+
+  function openPriceMenu() {
+    priceButton.classList.add("active");
+    priceList.classList.add("active");
+  }
+
+  function closePriceMenu() {
+    priceButton.classList.remove("active");
+    priceList.classList.remove("active");
+  }
+
+  priceButton.addEventListener("mouseover", (e) => {
+    e.preventDefault();
+
+    openPriceMenu();
+  });
+  priceButton.addEventListener("mouseout", (e) => {
+    e.preventDefault();
+
+    closePriceMenu();
+	});
+
+  priceList.addEventListener("mouseover", (e) => {
+    e.preventDefault();
+
+    openPriceMenu();
+  });
+  priceList.addEventListener("mouseout", (e) => {
+    e.preventDefault();
+
+    closePriceMenu();
+	});
 	
-	burgerBtn.addEventListener('click', e => {
-		e.preventDefault();
-		burgerBtn.classList.toggle('is-active');
-		burgerMenu.classList.toggle('active');
-		if (burgerBtn.classList.contains('is-active')) {
-			body.style.overflow = 'hidden'
-		} else {
-			body.style.overflow = 'initial'
-		}
-	})
+	
 });

@@ -303,8 +303,13 @@
 	@include phones {
 		width: 100%;
 	}
+
+	& span {
+		font-family: "open-semibold";
+	}
 }
 
 .form__thanks {
 	display: none;
 }
+
