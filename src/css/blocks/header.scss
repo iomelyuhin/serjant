@@ -26,7 +26,7 @@
 .header__nav {
   width: 60%;
   @include tablets-hor {
-    width: 75%;
+    width: 90%;
   }
   @include tablets {
     width: 100%;
@@ -105,12 +105,21 @@
 
 .header__nav-list {
   display: flex;
-  padding: 0 (30px);
+	padding: 0 (30px);
+	
+	@include tablets {
+		padding: 0;
+		flex-wrap: wrap;
+	}
 	// justify-content: space-between;
 	
 	.header__nav-item {
 		// margin-right: 20px;
 		position: relative;
+
+		@include tablets {
+			padding: 10px 0;
+		}
 	}
 }
 
@@ -119,7 +128,7 @@
   font-family: 'Open Sans';
   font-size: (16px);
 	color: #fff;
-	padding: 10px 0;
+	padding: 10px 20px;
 	&.active {
 		background-color: #fff;
 		color: $blue;
@@ -184,7 +193,7 @@
   display: flex;
   justify-content: flex-end;
   // padding: 0 (30px) 0 0;
-  width: 40%;
+  width: 45%;
 
   @include tablets-hor {
     width: 100%;
@@ -204,7 +213,7 @@
   &::before {
     content: "";
     display: flex;
-    background: url("icons/map.svg") no-repeat;
+    background: url("../img/icons/map.svg") no-repeat;
     background-size: contain;
     width: 16px;
     height: 16px;
@@ -226,7 +235,7 @@
   &::before {
     content: "";
     display: flex;
-    background: url("icons/user.svg") no-repeat;
+    background: url("../img/icons/user.svg") no-repeat;
     background-size: contain;
     width: 23px;
     height: 23px;
@@ -255,7 +264,7 @@
   &::before {
     content: "";
     display: flex;
-    background: url("icons/compact_cart.svg") no-repeat;
+    background: url("../img/icons/compact_cart.svg") no-repeat;
     background-size: contain;
     width: 23px;
     height: 23px;
@@ -588,10 +597,6 @@
   flex-direction: column;
   align-items: flex-end;
 
-  @include tablets-hor {
-    align-items: center;
-  }
-
   @include phones {
     align-items: center;
   }
@@ -650,7 +655,7 @@ font-weight: 400;
       content: "";
       width: 12px;
       height: 100%;
-      background: url("content/bg/header_nav_line.png") no-repeat;
+      background: url("../img/content/bg/header_nav_line.png") no-repeat;
 
       @include tablets-hor {
         background-size: cover;
@@ -728,7 +733,7 @@ font-weight: 400;
   left: -200%;
   height: 100vh;
   width: 100%;
-  background: url("content/pic/responder_form.png") no-repeat, $blue;
+  background: url("../img/content/pic/responder_form.png") no-repeat, $blue;
   background-size: 190px;
   background-position: right bottom;
   transition: 0.3s;

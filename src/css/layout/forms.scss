@@ -314,3 +314,8 @@ font-weight: 400;
 	display: none;
 }
 
+.form__footer {
+	@include tablets-hor {
+		margin-top: 20px;
+	}
+}

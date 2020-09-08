@@ -254,7 +254,7 @@ font-weight: 400;
   width: 600px;
   min-height: 170px;
   padding: 20px;
-  background: url("content/pic/man.svg") no-repeat #fffaed;
+  background: url("../img/content/pic/man.svg") no-repeat #fffaed;
   background-position: right bottom;
 }
 
@@ -395,7 +395,7 @@ font-weight: 400;
   &::before {
     content: "";
     display: flex;
-    background: url("icons/shesternya.svg");
+    background: url("../img/icons/shesternya.svg");
     background-repeat: no-repeat;
     // background-size: 30px 30px;
     width: 29px;
@@ -409,7 +409,7 @@ font-weight: 400;
     color: #fff;
 
     &::before {
-      background: url("icons/shesternya_w.svg");
+      background: url("../img/icons/shesternya_w.svg");
     }
   }
   @include tablets-hor {
