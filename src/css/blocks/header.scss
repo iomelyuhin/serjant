@@ -204,7 +204,7 @@
   &::before {
     content: "";
     display: flex;
-    background: url("/img/icons/map.svg") no-repeat;
+    background: url("icons/map.svg") no-repeat;
     background-size: contain;
     width: 16px;
     height: 16px;
@@ -226,7 +226,7 @@
   &::before {
     content: "";
     display: flex;
-    background: url("/img/icons/user.svg") no-repeat;
+    background: url("icons/user.svg") no-repeat;
     background-size: contain;
     width: 23px;
     height: 23px;
@@ -255,7 +255,7 @@
   &::before {
     content: "";
     display: flex;
-    background: url("/img/icons/compact_cart.svg") no-repeat;
+    background: url("icons/compact_cart.svg") no-repeat;
     background-size: contain;
     width: 23px;
     height: 23px;
@@ -610,7 +610,8 @@
   margin-top: 7px;
   color: #000;
   font-size: (28px);
-  font-family: "open-bold";
+  font-family: "open";
+font-weight: bold;
 
   @include phones {
 		font-size: 24px;
@@ -619,7 +620,8 @@
 }
 
 .header__callback-btn {
-  font-family: "open-semibold";
+  font-family: "open";
+font-weight: 400;
   font-size: (20px);
   color: $red;
   text-decoration: underline;
@@ -648,7 +650,7 @@
       content: "";
       width: 12px;
       height: 100%;
-      background: url("/img/content/bg/header_nav_line.png") no-repeat;
+      background: url("content/bg/header_nav_line.png") no-repeat;
 
       @include tablets-hor {
         background-size: cover;
@@ -726,7 +728,7 @@
   left: -200%;
   height: 100vh;
   width: 100%;
-  background: url("/img/content/pic/responder_form.png") no-repeat, $blue;
+  background: url("content/pic/responder_form.png") no-repeat, $blue;
   background-size: 190px;
   background-position: right bottom;
   transition: 0.3s;

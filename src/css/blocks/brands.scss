@@ -2,7 +2,8 @@
 /*! =========================================BRANDS========================================= */
 /*! ======================================================================================== */
 .brands__title {
-	font-family: "open-bold";
+	font-family: "open";
+font-weight: bold;
 	// margin-bottom: 10px;
 	font-size: 20px;
 }
@@ -20,7 +21,8 @@
 
 .brands__item a{
 	color: $red;
-	font-family: "open-bold";
+	font-family: "open";
+font-weight: bold;
 	display: flex;
 	border-bottom: 1px solid $red;
 	transition: .3s;

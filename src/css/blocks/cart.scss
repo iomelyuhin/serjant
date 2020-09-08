@@ -35,7 +35,8 @@
 	}
 }
 .cart__title {
-  font-family: "open-bold";
+  font-family: "open";
+font-weight: bold;
   // margin-bottom: 10px;
   font-size: 20px;
 }
@@ -208,7 +209,8 @@
 .cart__goods-table-total-price {
   color: #5ecaa0;
   font-size: 22px;
-  font-family: "open-bold";
+  font-family: "open";
+font-weight: bold;
   white-space: nowrap;
 }
 
@@ -237,7 +239,8 @@
   text-align: center;
   padding: 10px 0;
   color: #5ecaa0;
-  font-family: "open-bold";
+  font-family: "open";
+font-weight: bold;
   font-size: 24px;
 }
 
@@ -295,7 +298,8 @@
 	color: #000000;
 	font-size: 18px;
 	line-height: 1.5;
-	font-family: 'open-semibold';
+	font-family: 'open';
+font-weight: 400;
 }
 
 .radio__text-desc {

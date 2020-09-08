@@ -39,7 +39,7 @@
 		transform: translateY(-50%);
 		width: 16px;
 		height: 30px;
-		background: url("/img/icons/lightning.svg") no-repeat;
+		background: url("icons/lightning.svg") no-repeat;
 		background-size: contain;
 		@include desktop {
 			display: none;
@@ -83,7 +83,8 @@
 .benefits__item-text {
 	margin-left: 13px;
 	span {
-		font-family: 'open-semibold';
+		font-family: 'open';
+font-weight: 400;
 		font-size: 15px;
 		color: #fff;
 
@@ -102,7 +103,8 @@
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 20px;
-	font-family: 'open-semibold';
+	font-family: 'open';
+font-weight: 400;
 	@include tablets-hor {
 		margin-top: 5px;
 	}
@@ -116,7 +118,8 @@
 	// height: 70px;
 	justify-content: center;
 	align-items: center;
-	font-family: 'open-semibold';
+	font-family: 'open';
+font-weight: 400;
 	font-size: 20px;
 	padding: 12px 43px;
 	max-width: fit-content;

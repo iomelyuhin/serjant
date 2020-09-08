@@ -12,7 +12,8 @@
 }
 
 .printer__title {
-  font-family: "open-bold";
+  font-family: "open";
+font-weight: bold;
   font-size: 20px;
 }
 
@@ -120,7 +121,7 @@
 		}
 
     &::after {
-      content: "/";
+      content: "";
       display: flex;
       padding: 0 5px;
     }

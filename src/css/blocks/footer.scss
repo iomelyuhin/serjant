@@ -56,7 +56,8 @@
 .footer__contacts-item--phone {
 	font-size: rem(28px);
 	color: #fff;
-	font-family: 'open-bold';
+	font-family: 'open';
+font-weight: bold;
 }
 
 .footer__contacts-item--schedule {
@@ -102,7 +103,8 @@
 .footer__links-contacts-item {
 	color: #fff;
 	font-size: rem(20px);
-	font-family: 'open-light';
+	font-family: 'open';
+font-weight: 300;
 }
 
 .footer__links-contacts-item-link {
@@ -146,7 +148,8 @@
 }
 
 .footer__links-product-link {
-	font-family: 'open-bold';
+	font-family: 'open';
+font-weight: bold;
 	font-size: rem(20px);
 	color: #fff;
 }

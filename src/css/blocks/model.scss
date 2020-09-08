@@ -12,7 +12,8 @@
 }
 
 .model__title {
-  font-family: "open-bold";
+  font-family: "open";
+font-weight: bold;
   font-size: 20px;
 }
 
@@ -37,7 +38,8 @@
   white-space: nowrap;
   color: #5d2f95;
   transition: 0.3s;
-  font-family: "open-semibold";
+  font-family: "open";
+font-weight: 400;
   &:hover {
     background-color: #5d2f95;
     color: #fff;
@@ -148,12 +150,14 @@
 
 .model__price-type {
   font-size: 36px;
-  font-family: "open-semibold";
+  font-family: "open";
+font-weight: 400;
 }
 
 .model__price-money {
   font-size: 50px;
-  font-family: "open-bold";
+  font-family: "open";
+font-weight: bold;
 }
 
 //qty
@@ -230,7 +234,8 @@
   font-size: 26px;
   margin-bottom: 10px;
   text-align: center;
-  font-family: "open-semibold";
+  font-family: "open";
+font-weight: 400;
 }
 
 .model__only-buy {
@@ -249,7 +254,7 @@
   width: 600px;
   min-height: 170px;
   padding: 20px;
-  background: url("/img/content/pic/man.svg") no-repeat #fffaed;
+  background: url("content/pic/man.svg") no-repeat #fffaed;
   background-position: right bottom;
 }
 
@@ -318,7 +323,8 @@
 .model__additional-item-title {
   color: #ee4266;
   font-size: 30px;
-  font-family: "open-semibold";
+  font-family: "open";
+font-weight: 400;
   border-bottom: 3px solid #ee4266;
   transition: 0.3s;
   display: flex;
@@ -383,12 +389,13 @@
   white-space: nowrap;
   color: #5d2f95;
   transition: 0.3s;
-  font-family: "open-semibold";
+  font-family: "open";
+font-weight: 400;
 
   &::before {
     content: "";
     display: flex;
-    background: url("/img/icons/shesternya.svg");
+    background: url("icons/shesternya.svg");
     background-repeat: no-repeat;
     // background-size: 30px 30px;
     width: 29px;
@@ -402,7 +409,7 @@
     color: #fff;
 
     &::before {
-      background: url("/img/icons/shesternya_w.svg");
+      background: url("icons/shesternya_w.svg");
     }
   }
   @include tablets-hor {
@@ -429,7 +436,8 @@
 
 .model__refill-title {
   font-size: 30px;
-  font-family: "open-extra";
+  font-family: "open";
+font-weight: 900;;
   width: 50%;
   flex-shrink: 0;
 
@@ -460,7 +468,8 @@
 
 .model__refill-calc-text {
   font-size: 18px;
-  font-family: "open-semibold";
+  font-family: "open";
+font-weight: 400;
 }
 
 .model__refill-calc-controls {
@@ -474,7 +483,8 @@
   margin-right: 2px;
   white-space: nowrap;
   font-size: 14px;
-  font-family: "open-semibold";
+  font-family: "open";
+font-weight: 400;
   // cursor: pointer;
 
   &:first-child {
@@ -513,7 +523,8 @@
   color: #0000ee;
   text-decoration: underline;
   display: flex;
-  font-family: "open-semibold";
+  font-family: "open";
+font-weight: 400;
   padding: 5px 0;
 
   &:hover {
@@ -523,7 +534,8 @@
 
 .model__refill-calc-bottom-text {
   padding: 5px 0;
-  font-family: "open-semibold";
+  font-family: "open";
+font-weight: 400;
   color: #8f8f8f;
 }
 
@@ -690,7 +702,8 @@
 
 .model__controls-title {
   color: #fff;
-  font-family: "open-semibold";
+  font-family: "open";
+font-weight: 400;
   font-size: rem(24px);
   text-align: left;
 
@@ -778,7 +791,8 @@
   margin-top: 27px;
   text-align: center;
   min-height: 250px;
-  font-family: "open-semibold";
+  font-family: "open";
+font-weight: 400;
   margin-right: 27px;
   position: relative;
 
@@ -794,7 +808,8 @@
       top: 20px;
       font-size: 72px;
       color: rgba(246, 196, 69, 0.3);
-      font-family: "open-bold";
+      font-family: "open";
+font-weight: bold;
     }
   }
   &:nth-child(2) {
@@ -805,7 +820,8 @@
       top: 20px;
       font-size: 72px;
       color: rgba(246, 196, 69, 0.3);
-      font-family: "open-bold";
+      font-family: "open";
+font-weight: bold;
     }
   }
   &:nth-child(3) {
@@ -816,7 +832,8 @@
       top: 20px;
       font-size: 72px;
       color: rgba(246, 196, 69, 0.3);
-      font-family: "open-bold";
+      font-family: "open";
+font-weight: bold;
     }
   }
   &:nth-child(4) {
@@ -827,7 +844,8 @@
       top: 20px;
       font-size: 72px;
       color: rgba(246, 196, 69, 0.3);
-      font-family: "open-bold";
+      font-family: "open";
+font-weight: bold;
     }
   }
 
@@ -897,7 +915,8 @@
   background: linear-gradient(180deg, #f6c445 20%, #f3a84a 80%);
   border-radius: 10px;
   font-size: 18px;
-  font-family: "open-semibold";
+  font-family: "open";
+font-weight: 400;
   padding: 15px 30px;
   white-space: nowrap;
 
@@ -968,7 +987,8 @@
 .model__actions-refill-item-title-about-name {
   font-size: 40px;
   color: #ee4266;
-  font-family: "open-bold";
+  font-family: "open";
+font-weight: bold;
   text-decoration: underline;
 }
 

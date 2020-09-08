@@ -2,33 +2,44 @@
 /*! =========================================FONTS========================================== */
 /*! ======================================================================================== */
 @font-face {
-	font-family: 'open';
-	src: url('../fonts/opensans.woff') format('woff'), 
-	     url('../fonts/opensans.woff2') format('woff2'), 
-	     url('../fonts/opensans.ttf')  format('truetype');
-	}
+  font-family: "open";
+  src: url("../fonts/opensans.woff") format("woff"),
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 @font-face {
-	font-family: 'open-bold';
-	src: url('../fonts/opensansbold.woff2') format('woff2'), 
-	     url('../fonts/opensansbold.woff') format('woff'), 
-	     url('../fonts/opensansbold.ttf')  format('truetype');
-	}
+  font-family: "open";
+font-weight: bold;
+  src: url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff"),
+		url("../fonts/opensansbold.ttf") format("truetype");
+		font-weight: bold;
+    font-style: normal;
+}
 @font-face {
-	font-family: 'open-light';
-	src: url('../fonts/opensanslight.woff2') format('woff2'), 
-	     url('../fonts/opensanslight.woff') format('woff'), 
-	     url('../fonts/opensanslight.ttf')  format('truetype');
-	}
+  font-family: "open";
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff"),
+		url("../fonts/opensanslight.ttf") format("truetype");
+		font-weight: 300;
+    font-style: normal;
+}
 @font-face {
-	font-family: 'open-semibold';
-	src: url('../fonts/opensanssemibold.woff2') format('woff2'), 
-	     url('../fonts/opensanssemibold.woff') format('woff'), 
-	     url('../fonts/opensanssemibold.ttf')  format('truetype');
-	}
+  font-family: "open";
+  src: url("../fonts/opensanssemibold.woff2") format("woff2"),
+    url("../fonts/opensanssemibold.woff") format("woff"),
+		url("../fonts/opensanssemibold.ttf") format("truetype");
+		font-weight: 400;
+    font-style: normal;
+}
 
 @font-face {
-	font-family: 'open-extra';
-	src: url('../fonts/opensansextrabold.woff2') format('woff2'), 
-	     url('../fonts/opensansextrabold.woff') format('woff'), 
-	     url('../fonts/opensansextrabold.ttf')  format('truetype');
-	}
+  font-family: "open";
+  src: url("../fonts/opensansextrabold.woff2") format("woff2"),
+    url("../fonts/opensansextrabold.woff") format("woff"),
+		url("../fonts/opensansextrabold.ttf") format("truetype");
+		font-weight: 900;
+    font-style: normal;
+}
