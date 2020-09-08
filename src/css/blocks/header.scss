@@ -116,10 +116,10 @@
 
 
 .header__nav-link {
-  font-family: "open";
+  font-family: 'Open Sans';
   font-size: (16px);
 	color: #fff;
-	padding: 0 10px;
+	padding: 10px 0;
 	&.active {
 		background-color: #fff;
 		color: $blue;
@@ -132,7 +132,7 @@
 .header__hamburger-menu {
 	.header__nav-link {
 		padding: 0;
-		font-family: "open";
+		font-family: 'Open Sans';
     font-size: 16px;
     color: #fff;
 	}
@@ -159,7 +159,7 @@
 }
 
 .header__nav-link-item a {
-	font-family: "open";
+	font-family: 'Open Sans';
 	color: $blue;
 	padding: 10px 0;
 	display: flex;
@@ -174,7 +174,7 @@
 .header__nav-link-mob-item {
 	padding: 7px 15px;
 	& a{
-		font-family: "open";
+		font-family: 'Open Sans';
 		font-size: 16px;
 		color: #fff;
 	}
@@ -610,7 +610,7 @@
   margin-top: 7px;
   color: #000;
   font-size: (28px);
-  font-family: "open";
+  font-family: 'Open Sans';
 font-weight: bold;
 
   @include phones {
@@ -620,7 +620,7 @@ font-weight: bold;
 }
 
 .header__callback-btn {
-  font-family: "open";
+  font-family: 'Open Sans';
 font-weight: 400;
   font-size: (20px);
   color: $red;

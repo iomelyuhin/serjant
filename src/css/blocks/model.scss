@@ -12,7 +12,7 @@
 }
 
 .model__title {
-  font-family: "open";
+  font-family: 'Open Sans';
 font-weight: bold;
   font-size: 20px;
 }
@@ -38,7 +38,7 @@ font-weight: bold;
   white-space: nowrap;
   color: #5d2f95;
   transition: 0.3s;
-  font-family: "open";
+  font-family: 'Open Sans';
 font-weight: 400;
   &:hover {
     background-color: #5d2f95;
@@ -150,13 +150,13 @@ font-weight: 400;
 
 .model__price-type {
   font-size: 36px;
-  font-family: "open";
+  font-family: 'Open Sans';
 font-weight: 400;
 }
 
 .model__price-money {
   font-size: 50px;
-  font-family: "open";
+  font-family: 'Open Sans';
 font-weight: bold;
 }
 
@@ -234,7 +234,7 @@ font-weight: bold;
   font-size: 26px;
   margin-bottom: 10px;
   text-align: center;
-  font-family: "open";
+  font-family: 'Open Sans';
 font-weight: 400;
 }
 
@@ -323,7 +323,7 @@ font-weight: 400;
 .model__additional-item-title {
   color: #ee4266;
   font-size: 30px;
-  font-family: "open";
+  font-family: 'Open Sans';
 font-weight: 400;
   border-bottom: 3px solid #ee4266;
   transition: 0.3s;
@@ -389,7 +389,7 @@ font-weight: 400;
   white-space: nowrap;
   color: #5d2f95;
   transition: 0.3s;
-  font-family: "open";
+  font-family: 'Open Sans';
 font-weight: 400;
 
   &::before {
@@ -436,7 +436,7 @@ font-weight: 400;
 
 .model__refill-title {
   font-size: 30px;
-  font-family: "open";
+  font-family: 'Open Sans';
 font-weight: 900;;
   width: 50%;
   flex-shrink: 0;
@@ -468,7 +468,7 @@ font-weight: 900;;
 
 .model__refill-calc-text {
   font-size: 18px;
-  font-family: "open";
+  font-family: 'Open Sans';
 font-weight: 400;
 }
 
@@ -483,7 +483,7 @@ font-weight: 400;
   margin-right: 2px;
   white-space: nowrap;
   font-size: 14px;
-  font-family: "open";
+  font-family: 'Open Sans';
 font-weight: 400;
   // cursor: pointer;
 
@@ -523,7 +523,7 @@ font-weight: 400;
   color: #0000ee;
   text-decoration: underline;
   display: flex;
-  font-family: "open";
+  font-family: 'Open Sans';
 font-weight: 400;
   padding: 5px 0;
 
@@ -534,7 +534,7 @@ font-weight: 400;
 
 .model__refill-calc-bottom-text {
   padding: 5px 0;
-  font-family: "open";
+  font-family: 'Open Sans';
 font-weight: 400;
   color: #8f8f8f;
 }
@@ -702,7 +702,7 @@ font-weight: 400;
 
 .model__controls-title {
   color: #fff;
-  font-family: "open";
+  font-family: 'Open Sans';
 font-weight: 400;
   font-size: rem(24px);
   text-align: left;
@@ -791,7 +791,7 @@ font-weight: 400;
   margin-top: 27px;
   text-align: center;
   min-height: 250px;
-  font-family: "open";
+  font-family: 'Open Sans';
 font-weight: 400;
   margin-right: 27px;
   position: relative;
@@ -808,7 +808,7 @@ font-weight: 400;
       top: 20px;
       font-size: 72px;
       color: rgba(246, 196, 69, 0.3);
-      font-family: "open";
+      font-family: 'Open Sans';
 font-weight: bold;
     }
   }
@@ -820,7 +820,7 @@ font-weight: bold;
       top: 20px;
       font-size: 72px;
       color: rgba(246, 196, 69, 0.3);
-      font-family: "open";
+      font-family: 'Open Sans';
 font-weight: bold;
     }
   }
@@ -832,7 +832,7 @@ font-weight: bold;
       top: 20px;
       font-size: 72px;
       color: rgba(246, 196, 69, 0.3);
-      font-family: "open";
+      font-family: 'Open Sans';
 font-weight: bold;
     }
   }
@@ -844,7 +844,7 @@ font-weight: bold;
       top: 20px;
       font-size: 72px;
       color: rgba(246, 196, 69, 0.3);
-      font-family: "open";
+      font-family: 'Open Sans';
 font-weight: bold;
     }
   }
@@ -915,7 +915,7 @@ font-weight: bold;
   background: linear-gradient(180deg, #f6c445 20%, #f3a84a 80%);
   border-radius: 10px;
   font-size: 18px;
-  font-family: "open";
+  font-family: 'Open Sans';
 font-weight: 400;
   padding: 15px 30px;
   white-space: nowrap;
@@ -987,14 +987,14 @@ font-weight: 400;
 .model__actions-refill-item-title-about-name {
   font-size: 40px;
   color: #ee4266;
-  font-family: "open";
+  font-family: 'Open Sans';
 font-weight: bold;
   text-decoration: underline;
 }
 
 .model__actions-refill-item-title-about-text {
   margin-top: 10px;
-  font-family: "open";
+  font-family: 'Open Sans';
   font-size: 18px;
   color: #000;
 }
